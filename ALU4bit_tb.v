@@ -16,7 +16,7 @@ module ALU4bit_tb;
         $display("a b sel | y");
         sel = 2'b00; 
         for (i=0; i<16;i=i+1) begin
-            a=i[3:0]; 
+            a=i[3:0]; //changes to binary number 
             for (j=0; j<16;j=j+1) begin
                 b = j[3:0]; #10; $display("%4b %4b %2b | %4b", a, b, sel, y);
             end
